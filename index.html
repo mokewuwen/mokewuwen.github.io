@@ -1,25 +1,29 @@
 <!DOCTYPE html>   
 <html>   
-<head>   
-  <meta charset=" utf-8">   
-  <title>测试</title>
-  <style type="text/css">
-    #btn{
-      width: 100px;
-      height:45px;
-      background-color:#30C4BC;
-      border: none;
-      color: beige;
-      border-radius: 5px;
-    }
-  </style>
-  <script type="text/javascript">
-    window.onload = function(){
-      document.getElementById("bg").style.backgroundColor="#F90";
-    }
-  </script>
-</head>
-<body>
-  <button type="button" id="btn">测试</button>
-</body>
+  <head>   
+    <meta charset=" utf-8">   
+    <title>测试</title>
+    <style type="text/css">
+      #btn{
+        width: 100px;
+        height:45px;
+        background-color:#30C4BC;
+        border: none;
+        color: beige;
+        border-radius: 5px;
+        outline: none;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("bg").style.backgroundColor="#F90";
+      }
+      function test(){
+        android.toast("I am from javascript!")
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" id="btn" onclick="test()">测试</button>
+  </body>
 </html>
