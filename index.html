@@ -15,12 +15,16 @@
       }
     </style>
     <script type="text/javascript">
-      function test(){
+      function toast(){
         android.toast("I am from javascript!");
+      }
+      function dialog(){
+        android.dialog("测试","来自JavaScript");
       }
     </script>
   </head>
   <body>
-    <button type="button" id="btn" onclick="test()">测试</button>
+    <button type="button" id="btn" onclick="toast()">toast</button>
+    <button type="button" id="btn" onclick="dialog()">dialog</button>
   </body>
 </html>
